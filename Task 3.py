@@ -9,7 +9,7 @@ def search(book, data):
     data - список проверяемых данных
     '''
     for stroke in data[1:]:
-        if book in stroke[4]:
+        if book == stroke[4]:
             return (f'{stroke[-2]} - {stroke[1]} - {stroke[0]} - {stroke[-1]}')
     return 'Данной книги в этой библиотеке нет'
 
