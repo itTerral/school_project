@@ -1,7 +1,7 @@
 import csv
 
 # с помощью open считываем файл
-with open('books.csv', encoding='utf-8', newline='') as file, open('books_grade1.csv', 'w', encoding='utf-8', newline='') as newfile:
+with open('books.csv', encoding='utf-8', newline='') as file, open('books_grade.csv', 'w', encoding='utf-8', newline='') as newfile:
     data = list(csv.reader(file, delimiter=';'))
     res = csv.writer(newfile, delimiter=';')
     # проходимся по строчкам в полученном списке и присваиваем ярлыки

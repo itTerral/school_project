@@ -1,7 +1,7 @@
 import csv
 
 # с помощью open считываем файл
-with open('books.csv', encoding='utf-8', newline='') as file, open('books_rowling1.csv', 'w', encoding='utf-8', newline='') as newfile:
+with open('books.csv', encoding='utf-8', newline='') as file, open('books_rowling.csv', 'w', encoding='utf-8', newline='') as newfile:
     data = list(csv.reader(file, delimiter=';'))
     res = csv.writer(newfile, delimiter=';')
     res.writerow([data[0][0], data[0][2], data[0][4], data[0][-1]])
